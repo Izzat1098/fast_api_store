@@ -85,3 +85,7 @@ def main():
     if not port or not host:
         raise EnvironmentError("PORT or HOST environment variable are not set")
     uvicorn.run("fastapi_app.main:app", host=host, port=int(port), reload=True)
+
+
+if __name__ == "__main__":
+    main()
