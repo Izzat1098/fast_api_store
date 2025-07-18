@@ -1,0 +1,65 @@
+{
+  "users": [
+    {
+      "email": "john@example.com",
+      "user_name": "john_doe",
+      "full_name": "John Doe",
+      "password": "hashed_password_here"
+    },
+    {
+      "email": "jane@example.com",
+      "user_name": "jane_smith",
+      "full_name": "Jane Smith",
+      "password": "hashed_password_here"
+    }
+  ],
+  "items": [
+    {
+      "name": "Laptop",
+      "description": "High-performance laptop",
+      "price": 1299.99
+    },
+    {
+      "name": "Smartphone",
+      "description": "Latest model smartphone",
+      "price": 799.99
+    }
+  ],
+  "orders": [
+    {
+      "user_id": 1,
+      "items": [
+        {
+          "item_id": 1,
+          "quantity": 2
+        },
+        {
+          "item_id": 2,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "user_id": 2,
+      "items": [
+        {
+          "item_id": 1,
+          "quantity": 3
+        },
+        {
+          "item_id": 2,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "user_id": 1,
+      "items": [
+        {
+          "item_id": 1,
+          "quantity": 5
+        }
+      ]
+    }
+  ]
+}
