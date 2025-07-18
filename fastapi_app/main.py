@@ -80,11 +80,13 @@ app.openapi = custom_openapi
 # Run the app using Uvicorn when executed directly
 # if __name__ == "__main__":
 def main():
-    port = os.environ.get("PORT")
-    host = os.environ.get("HOST")
+    port = int(os.environ.get("PORT", 8000))
+    host = os.environ.get("HOST", "0.0.0.0")
+    
     if not port or not host:
         raise EnvironmentError("PORT or HOST environment variable are not set")
-    uvicorn.run("fastapi_app.main:app", host=host, port=int(port), reload=True)
+    
+    uvicorn.run("fastapi_app.main:app", host=host, port=int(port), reload=False)
 
 
 if __name__ == "__main__":
